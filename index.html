@@ -1,0 +1,140 @@
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UTM Link Generator</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <button id="theme-toggle" aria-label="Toggle Theme">
+
+            <span class="icon">☀️</span>
+
+        </button>
+
+    </header>
+
+    <main class="container">
+
+        <h1>UTM Link Generator</h1>
+
+        <p>Create tracking links with UTM parameters to monitor traffic from different sources.</p>
+
+        
+
+        <div class="utm-generator">
+
+            <div class="form-group">
+
+                <label for="base-url">Base URL*:</label>
+
+                <input type="url" id="base-url" placeholder="https://example.com" required>
+
+                
+
+                <label for="utm-source">Source* (e.g., twitter, email):</label>
+
+                <input type="text" id="utm-source" placeholder="twitter" required>
+
+                
+
+                <label for="utm-medium">Medium* (e.g., social, cpc):</label>
+
+                <input type="text" id="utm-medium" placeholder="social" required>
+
+                
+
+                <label for="utm-campaign">Campaign (e.g., spring_sale):</label>
+
+                <input type="text" id="utm-campaign" placeholder="spring_sale">
+
+                
+
+                <label for="utm-term">Term (e.g., keyword):</label>
+
+                <input type="text" id="utm-term" placeholder="optional">
+
+                
+
+                <label for="utm-content">Content (e.g., banner_ad):</label>
+
+                <input type="text" id="utm-content" placeholder="optional">
+
+                
+
+                <button id="generate-utm" class="generate-btn">Generate UTM Link</button>
+
+            </div>
+
+            <div class="utm-output">
+
+                <span id="utm-link">Your generated link will appear here</span>
+
+                <button id="copy-utm" class="copy-btn" disabled>Copy</button>
+
+            </div>
+
+        </div>
+
+        
+
+        <p>Want to see the code? Check it out on GitHub: <a href="https://github.com/Dev-Geniy/UTM-Link-Generator" target="_blank">https://github.com/Dev-Geniy/UTM-Link-Generator</a></p>
+
+        <p class="note">Note: Replace the link above with your own GitHub repository URL in the HTML file (search for "https://github.com/example/utm-link-generator").</p>
+
+    </main>
+
+    
+
+    <footer class="footer">
+
+        <div class="social">
+
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-twitter-x-3d-icon-download-in-png-blend-fbx-gltf-file-formats--logo-network-social-media-pack-logos-icons-8050016.png?f=webp" alt="Twitter Icon" class="twitter-icon">
+
+            <div>
+
+                <a href="https://twitter.com/HotDog850642" target="_blank">@HotDog850642</a>
+
+                <p>I'm a code developer. Feel free to reach out!</p>
+
+            </div>
+
+        </div>
+
+        <div class="donation">
+
+            <h3>For voluntary donations</h3>
+
+            <div class="btc-address">
+
+                <span id="btc-code">bc1q3r5gad7dxc276ael06n02gek7ncm536hpndgmq</span>
+
+                <button class="copy-btn" data-target="btc-code">Copy</button>
+
+            </div>
+
+            <p class="thanks">Thank you for your support!</p>
+
+        </div>
+
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
